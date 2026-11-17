@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Liên hệ với Nội Thất Mộc để tư vấn thiết kế và đặt sản phẩm nội thất." />
+    <title>Liên hệ | Nội Thất Mộc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">MIỄN PHÍ VẬN CHUYỂN đơn từ 3.000K <span>✦</span> Ưu đãi nội thất mùa mới giảm đến 25%</div>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Trang chủ Nội Thất Mộc">
+        <span class="brand-mark">n.</span>
+        <span>NỘI THẤT <b>MỘC</b></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
+        <a href="products.html">Sản phẩm</a>
+        <a href="index.html#danh-muc">Danh mục</a>
+        <a href="about.html">Về Mộc</a>
+        <a href="contact.html">Liên hệ</a>
+      </nav>
+      <div class="header-actions">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="search-input" type="search" placeholder="Tìm nội thất bạn thích..." aria-label="Tìm sản phẩm" />
+          <kbd>⌘ K</kbd>
+        </label>
+        <button class="cart-button" id="open-cart" aria-label="Mở giỏ hàng">
+          <span aria-hidden="true">♧</span>
+          <span class="cart-label">Giỏ hàng</span>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="story-hero" style="margin: 48px 7.2% 0; padding: 56px 8% 40px; background: linear-gradient(135deg, #f5efe8 0%, #eedfce 100%); border-radius: 30px; box-shadow: 0 20px 50px rgba(24,20,15,0.08);">
+        <div class="section-heading" style="margin-bottom: 18px;">
+          <div>
+            <span class="eyebrow">LIÊN HỆ</span>
+            <h2>Hãy chia sẻ <em>không gian bạn muốn.</em></h2>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns: 1.0fr 1.0fr; gap: 28px; align-items: start;">
+          <div style="display:grid; gap: 18px;">
+            <div style="padding: 18px 20px; border-radius: 20px; background: rgba(255,255,255,0.48);">
+              <strong style="display:block; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #7a7067; margin-bottom: 8px;">Địa chỉ</strong>
+              <p style="margin:0; color:#4f4b46; line-height:1.8;">123 Đường Nguyễn Huệ, Quận 1, TP.HCM</p>
+            </div>
+            <div style="padding: 18px 20px; border-radius: 20px; background: rgba(255,255,255,0.48);">
+              <strong style="display:block; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #7a7067; margin-bottom: 8px;">Điện thoại</strong>
+              <p style="margin:0; color:#4f4b46; line-height:1.8;">0909 123 456</p>
+            </div>
+            <div style="padding: 18px 20px; border-radius: 20px; background: rgba(255,255,255,0.48);">
+              <strong style="display:block; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #7a7067; margin-bottom: 8px;">Email</strong>
+              <p style="margin:0; color:#4f4b46; line-height:1.8;">hello@noithatmoc.vn</p>
+            </div>
+          </div>
+
+          <form id="contact-form" style="background: rgba(255,255,255,0.56); padding: 20px; border-radius: 24px; display: grid; gap: 12px;">
+            <label style="font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #7a7067;">Họ và tên<input type="text" required placeholder="Nguyễn An" style="margin-top: 8px; width:100%; padding: 12px 14px; border:1px solid #e6d9cb; border-radius: 12px; background: white; font-size: 12px;" /></label>
+            <label style="font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #7a7067;">Email<input type="email" required placeholder="ban@email.com" style="margin-top: 8px; width:100%; padding: 12px 14px; border:1px solid #e6d9cb; border-radius: 12px; background: white; font-size: 12px;" /></label>
+            <label style="font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #7a7067;">Nội dung<textarea rows="4" required placeholder="Tôi muốn tư vấn nội thất cho phòng khách 3.5x5m..." style="margin-top: 8px; width:100%; padding: 12px 14px; border:1px solid #e6d9cb; border-radius: 12px; background: white; font-size: 12px; resize: vertical;"></textarea></label>
+            <button type="submit" class="button button-dark" style="width: fit-content;">Gửi yêu cầu <span>→</span></button>
+          </form>
+        </div>
+      </section>
+
+      <section class="newsletter" id="ve-chung-toi" style="margin-top: 40px;">
+        <div class="newsletter-flower" aria-hidden="true">✳</div>
+        <div>
+          <span class="eyebrow">THƯ TỪ MỘC</span>
+          <h2>Nhận gợi ý<br />không gian đẹp mỗi tuần.</h2>
+          <p>Ưu đãi nội thất mới, mẫu thiết kế trong mùa và những sản phẩm phù hợp với căn nhà của bạn.</p>
+        </div>
+        <form id="newsletter-form" class="newsletter-form">
+          <label for="newsletter-email">Địa chỉ email của bạn</label>
+          <div>
+            <input id="newsletter-email" type="email" placeholder="ban@email.com" required />
+            <button type="submit" aria-label="Đăng ký nhận tin">→</button>
+          </div>
+          <small id="newsletter-message">Bằng việc đăng ký, bạn đồng ý nhận tin từ Nội Thất Mộc.</small>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="index.html"><span class="brand-mark">n.</span><span>NỘI THẤT <b>MỘC</b></span></a>
+      <p>Vẻ đẹp cho từng không gian sống. <span>Made with ♡ in Vietnam.</span></p>
+      <div><a href="products.html">Sản phẩm</a><a href="contact.html">Liên hệ</a><span>© 2025 Nội Thất Mộc</span></div>
+    </footer>
+
+    <div class="cart-backdrop" id="cart-backdrop"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Giỏ hàng" aria-hidden="true">
+      <div class="cart-header">
+        <div><span class="eyebrow">TÚI ĐỒ CỦA BẠN</span><h2>Giỏ hàng <span id="drawer-count">(0)</span></h2></div>
+        <button id="close-cart" class="close-button" aria-label="Đóng giỏ hàng">×</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span>🛍️</span><strong>Túi đồ còn đang trống</strong><p>Chọn vài món xinh xắn cho ngày thêm vui nhé.</p><button class="button button-dark" id="continue-shopping">Khám phá sản phẩm</button></div>
+      <div class="cart-footer" id="cart-footer">
+        <div class="subtotal"><span>Tạm tính</span><strong id="cart-subtotal">0₫</strong></div>
+        <p>Phí vận chuyển sẽ được tính ở bước thanh toán.</p>
+        <button class="button button-dark checkout-button" id="checkout-button">Tiến hành đặt hàng <span>→</span></button>
+      </div>
+    </aside>
+
+    <dialog class="checkout-dialog" id="checkout-dialog">
+      <form method="dialog" class="dialog-close-form"><button class="close-button" aria-label="Đóng">×</button></form>
+      <span class="checkout-icon">✳</span>
+      <span class="eyebrow">CẢM ƠN BẠN ĐÃ CHỌN MỘC</span>
+      <h2>Đặt hàng thật dễ.</h2>
+      <p>Đây là bản demo giao diện. Đơn hàng của bạn chưa được gửi đi.</p>
+      <form id="checkout-form" class="checkout-form">
+        <label for="customer-name">Họ và tên</label><input id="customer-name" name="name" autocomplete="name" required placeholder="Nguyễn An" />
+        <label for="customer-phone">Số điện thoại</label><input id="customer-phone" name="phone" type="tel" autocomplete="tel" required pattern="[0-9+() .-]{9,15}" placeholder="09xx xxx xxx" />
+        <label for="customer-address">Địa chỉ nhận hàng</label><textarea id="customer-address" name="address" autocomplete="street-address" required rows="2" placeholder="Số nhà, đường, phường/xã, tỉnh/thành"></textarea>
+        <button class="button button-dark checkout-button" type="submit">Xác nhận đơn hàng <span>→</span></button>
+      </form>
+      <div class="order-success" id="order-success" hidden><strong>Đơn demo đã được ghi nhận! ♡</strong><p>Đây chỉ là bản xem thử, chưa có giao dịch hay đơn hàng thực tế.</p><button class="button button-dark" id="done-order" type="button">Tiếp tục mua sắm</button></div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
